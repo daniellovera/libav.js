@@ -9,6 +9,7 @@ FFMPEG_CONFIG=--prefix=/opt/ffmpeg \
 	--disable-x86asm --disable-inline-asm \
 	--disable-runtime-cpudetect \
 	--cc=emcc --ranlib=emranlib \
+	--nm="llvm-nm -g" \
 	--disable-doc \
 	--disable-stripping \
 	--disable-programs \
